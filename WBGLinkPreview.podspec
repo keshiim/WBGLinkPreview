@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WBGLinkPreview"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "It makes a preview from an url, grabbing all the information such as title, relevant texts and images."
 
   s.homepage     = "https://github.com/keshiim/WBGLinkPreview"
