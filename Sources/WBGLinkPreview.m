@@ -90,10 +90,10 @@ static const NSUInteger decriptionMinimumRelevant = 100;
 }
 
 - (void)fillRemainingInfoWithTitle:(NSString *)title description:(NSString *)description images:(NSArray<NSString *> *)images image:(NSString *)image {
-    [self.result setSafeObject:title forKey:@"title"];
-    [self.result setSafeObject:description forKey:@"description"];
-    [self.result setSafeObject:images forKey:@"images"];
-    [self.result setSafeObject:image forKey:@"image"];
+    [self.result setObject:title forKey:@"title"];
+    [self.result setObject:description forKey:@"description"];
+    [self.result setObject:images forKey:@"images"];
+    [self.result setObject:image forKey:@"image"];
 }
 
 - (void)cancel {
