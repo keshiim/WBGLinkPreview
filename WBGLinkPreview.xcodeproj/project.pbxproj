@@ -15,6 +15,11 @@
 		9655EA841E277C66007A4D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9655EA821E277C66007A4D6A /* LaunchScreen.storyboard */; };
 		9655EA8F1E277C66007A4D6A /* WBGLinkPreviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EA8E1E277C66007A4D6A /* WBGLinkPreviewTests.m */; };
 		9655EA9A1E277C66007A4D6A /* WBGLinkPreviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EA991E277C66007A4D6A /* WBGLinkPreviewUITests.m */; };
+		9655EAB21E277D49007A4D6A /* NSString+previewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EAA91E277D49007A4D6A /* NSString+previewExtension.m */; };
+		9655EAB31E277D49007A4D6A /* NSURLSession+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EAAB1E277D49007A4D6A /* NSURLSession+extension.m */; };
+		9655EAB41E277D49007A4D6A /* WBGLinkPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EAAD1E277D49007A4D6A /* WBGLinkPreview.m */; };
+		9655EAB51E277D49007A4D6A /* WBGPreviewError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EAAF1E277D49007A4D6A /* WBGPreviewError.m */; };
+		9655EAB61E277D49007A4D6A /* WBGPreviewRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655EAB11E277D49007A4D6A /* WBGPreviewRegex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		9655EA951E277C66007A4D6A /* WBGLinkPreviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBGLinkPreviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9655EA991E277C66007A4D6A /* WBGLinkPreviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBGLinkPreviewUITests.m; sourceTree = "<group>"; };
 		9655EA9B1E277C66007A4D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9655EAA81E277D49007A4D6A /* NSString+previewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+previewExtension.h"; sourceTree = "<group>"; };
+		9655EAA91E277D49007A4D6A /* NSString+previewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+previewExtension.m"; sourceTree = "<group>"; };
+		9655EAAA1E277D49007A4D6A /* NSURLSession+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+extension.h"; sourceTree = "<group>"; };
+		9655EAAB1E277D49007A4D6A /* NSURLSession+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+extension.m"; sourceTree = "<group>"; };
+		9655EAAC1E277D49007A4D6A /* WBGLinkPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGLinkPreview.h; sourceTree = "<group>"; };
+		9655EAAD1E277D49007A4D6A /* WBGLinkPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGLinkPreview.m; sourceTree = "<group>"; };
+		9655EAAE1E277D49007A4D6A /* WBGPreviewError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGPreviewError.h; sourceTree = "<group>"; };
+		9655EAAF1E277D49007A4D6A /* WBGPreviewError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGPreviewError.m; sourceTree = "<group>"; };
+		9655EAB01E277D49007A4D6A /* WBGPreviewRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGPreviewRegex.h; sourceTree = "<group>"; };
+		9655EAB11E277D49007A4D6A /* WBGPreviewRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGPreviewRegex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 		9655EA681E277C66007A4D6A = {
 			isa = PBXGroup;
 			children = (
+				9655EAA71E277D49007A4D6A /* Sources */,
 				9655EA731E277C66007A4D6A /* WBGLinkPreview */,
 				9655EA8D1E277C66007A4D6A /* WBGLinkPreviewTests */,
 				9655EA981E277C66007A4D6A /* WBGLinkPreviewUITests */,
@@ -138,6 +154,23 @@
 				9655EA9B1E277C66007A4D6A /* Info.plist */,
 			);
 			path = WBGLinkPreviewUITests;
+			sourceTree = "<group>";
+		};
+		9655EAA71E277D49007A4D6A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9655EAA81E277D49007A4D6A /* NSString+previewExtension.h */,
+				9655EAA91E277D49007A4D6A /* NSString+previewExtension.m */,
+				9655EAAA1E277D49007A4D6A /* NSURLSession+extension.h */,
+				9655EAAB1E277D49007A4D6A /* NSURLSession+extension.m */,
+				9655EAAC1E277D49007A4D6A /* WBGLinkPreview.h */,
+				9655EAAD1E277D49007A4D6A /* WBGLinkPreview.m */,
+				9655EAAE1E277D49007A4D6A /* WBGPreviewError.h */,
+				9655EAAF1E277D49007A4D6A /* WBGPreviewError.m */,
+				9655EAB01E277D49007A4D6A /* WBGPreviewRegex.h */,
+				9655EAB11E277D49007A4D6A /* WBGPreviewRegex.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9655EAB21E277D49007A4D6A /* NSString+previewExtension.m in Sources */,
+				9655EAB61E277D49007A4D6A /* WBGPreviewRegex.m in Sources */,
+				9655EAB41E277D49007A4D6A /* WBGLinkPreview.m in Sources */,
+				9655EAB51E277D49007A4D6A /* WBGPreviewError.m in Sources */,
+				9655EAB31E277D49007A4D6A /* NSURLSession+extension.m in Sources */,
 				9655EA7C1E277C66007A4D6A /* ViewController.m in Sources */,
 				9655EA791E277C66007A4D6A /* AppDelegate.m in Sources */,
 				9655EA761E277C66007A4D6A /* main.m in Sources */,
